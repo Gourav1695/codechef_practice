@@ -75,20 +75,21 @@ using namespace std;
  
  
 int main(){
-    int t;             
+    int t;  
+    cin>>t;           
     while(t--){
-        int x,y;
-        cin>>x>>y;
-        if(x>=y)
+        int x,m;
+        cin>>x>>m;
+        if(m%x==0)
         {
-            cout <<"Yes"<<endl;
+            cout<<((m/x)-1)<<endl;
 
         }
-        else 
-        
-    {
-        cout <<"NO"<<endl;
-    }
+        else
+        {
+            cout<<(m/x)<<endl;
+        }
+       
     
     }
     return 0;

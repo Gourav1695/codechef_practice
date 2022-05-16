@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+//Gourav yo
 //data_type_compressions :
 #define     ll                              long long int
-#define     ull                             unsigned long long int
 #define     ui                              unsigned int
+#define     ull                             unsigned long long int
 //STL :
 #define     vi                              vector<int>
 #define     vb                              vector<bool>
@@ -53,15 +53,16 @@ using namespace std;
 #define     ll_in2(x,y)                     scanf("%lld %lld",&x,&y)
 #define     ll_in3(x,y,z)                   scanf("%lld %lld %lld",&x,&y,&z)
 #define     int_out(x)                      printf("%d",x)
-#define     ll_out(x)                       printf("%lld",x)
 #define     char_out(x)                     printf("%c",x)
-#define     str_out(x)                      printf("%s",x)
 #define     YES                             printf("YES\n")
+#define     str_out(x)                      printf("%s",x)
+#define     ll_out(x)                       printf("%lld",x)
 #define     Yes                             printf("Yes\n")
 #define     NO                              printf("NO\n")
 #define     No                              printf("No\n")
 #define     nl                              printf("\n")
 //extras :
+#define     nx                              0x4f
 #define     e4                              int main()
 #define     checkmate                       return 0;
 #define     UNDEFINED                       0x3f
@@ -71,26 +72,85 @@ using namespace std;
  
  
 //..............................................Let's Start coding do your best :D......................................
- 
- 
- 
-int main(){
-    int t;             
-    while(t--){
-        int x,y;
-        cin>>x>>y;
-        if(x>=y)
-        {
-            cout <<"Yes"<<endl;
 
-        }
-        else 
+ 
+e4{
+     
+
+     ll t;   
+    cin>>t;          
+    while(t--){
+         ll  AA;
+         int x,y,gcd=0;
+         ll BB;
+         int counto=0;
+         int countz=0;//initializing as 0
+         //AA,BB is the given number
+         cin>>AA;
+         cin>>BB;//taking inputs
+         if (AA%2==0)
         
-    {
-        cout <<"NO"<<endl;
+              {
+                  if (BB-AA>=2)//checking condition for even first
+                  {
+                      cout<<AA<<" "<<AA+2<<"\n";
+                  }
+                  else
+                  {
+                     printf("-1\n");
+                  }
+                  
+                  
+              }
+        
+          else
+          {
+               if (BB-AA>=3)
+            {
+                if (AA%3==0)
+                {
+                    cout<<AA<< " "<<AA+3<<"\n";
+                }
+                else
+                {
+                    cout<<AA+1<<" "<<AA+3<<"\n";
+                }
+                //  else
+                //  {
+                //      cout<<AA+1<<" "<<AA+5<<"\n";
+                //  }
+    //               if ( y> x) {   
+    //                 int t = y;
+    //                  y= x;
+    //                 x = t;
+    // }
+    //             for (int i = 1; i <=  y; ++i) {
+    //             if (x % i == 0 && y % i ==0) {
+    //                 gcd = i;
+    //             }
+    //             }
+            }
+              
+              else
+              {
+                  printf("-1\n");
+              }
+              
+              
+          }
+          
+         
+        
+        //  else if (M!=0)
+        // {
+        //    cout<<M*3<<endl;
+        // }
+        
+        
+
+      
+
     }
-    
-    }
-    return 0;
+    checkmate;
 }
  
