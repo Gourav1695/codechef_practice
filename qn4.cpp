@@ -4,8 +4,8 @@ using namespace std;
 //Gourav yo
 //data_type_compressions :
 #define     ll                              long long int
-#define     ui                              unsigned int
 #define     ull                             unsigned long long int
+#define     ui                              unsigned int
 //STL :
 #define     vi                              vector<int>
 #define     vb                              vector<bool>
@@ -75,35 +75,42 @@ using namespace std;
  
  
 int main(){
-    int t;   
-    cin>>t;          
+    int t;  
+    cin>>t;
+    int ans=0;           
     while(t--){
-         ll  x,M;//M is the given number
-        cin>>M;
-        int ans=0;
-         if (M%4==0)//for 1st test case
+        int x;
+        cin>>x;
+        int count1=0;
+        int arr[x];
+        for (int  i = 0; i < x; i++)
         {
-            cout<<M+3<<"\n";
+            cin>>arr[i];
         }
-        else if ((M%4==3)or(M%4==2))//for second test case
+        if (x==1)
         {
-            printf("3\n");
+            cout<<"1"<<endl;
+        }
+        else{
+        for (int  i = 0; i < x; i++)
+        {
+            if (arr[i]!=arr[i+1])
+            {
+                count1++;
+            }
 
+            
         }
-
-        else if (M%4==1)//others
-        {
-            printf("%d",M);
+        cout<<count1<<endl;
         }
-        //  else if (M!=0)
-        // {
-        //    cout<<M*3<<endl;
-        // }
         
         
+        
+        
+       
+        
 
-      
-
+        
     }
     return 0;
 }

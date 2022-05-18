@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+//Gourav yo
 //data_type_compressions :
 #define     ll                              long long int
 #define     ull                             unsigned long long int
@@ -76,21 +76,36 @@ using namespace std;
  
 int main(){
     int t;  
-    cin>>t;           
+    cin>>t;
+    int ans=0;           
     while(t--){
-        int x,m;
-        cin>>x>>m;
-        if(m%x==0)
-        {
-            cout<<((m/x)-1)<<endl;
-
-        }
-        else
-        {
-            cout<<(m/x)<<endl;
-        }
+        int x;
+        cin>>x;
+        int count1=0;
+        int count2=0;
+        string arr[x];
+        string arr1[2] = { "START38", "LTIME108"};
+       for (int  i = 0; i < x; i++)
+       {
+           cin>>arr[i];
+       }
+       for (int  i = 0; i < x; i++)
+       {
+           if (arr[i]==arr1[0])
+           {
+               count1++;
+           }
+           else
+           {
+               count2++;
+           }
+       }
+       cout<<count1<<" "<<count2<<endl;
+      
        
-    
+        
+
+        
     }
     return 0;
 }
